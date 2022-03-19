@@ -1,6 +1,7 @@
 package MergeSortedLinkedLists;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.LinkedList;
 
 public class Solution {
 
@@ -40,15 +41,15 @@ public class Solution {
             Integer[] arr2 = {2, 4, 6, 20, 34};
             LinkedList list_head1 = new LinkedList(Arrays.asList(arr1));
             System.out.print("Original1: ");
-            list_head1.forEach(x -> System.out.println(x));
+            list_head1.forEach(System.out::println);
 
             LinkedList list_head2 = new LinkedList(Arrays.asList(arr2));
             System.out.print("Original2: ");
-            list_head2.forEach(x -> System.out.println(x));
+            list_head2.forEach(System.out::println);
 
             System.out.println("\nMerged:");
 
             LinkedList newHead = merge_sorted(list_head1, list_head2);
-            newHead.forEach(x -> System.out.println(x));
+            newHead.forEach(System.out::println);
         }
 }
