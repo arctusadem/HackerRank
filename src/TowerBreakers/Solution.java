@@ -1,6 +1,8 @@
 package TowerBreakers;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.stream.IntStream;
 
 class Result {
@@ -15,8 +17,21 @@ class Result {
      */
 
     public static int towerBreakers(int n, int m) {
-        return 0;
+        List<Integer> towers = new ArrayList<>();
+        int winner = 2;
+        int higherHeight = m;
+        int destroyedTowers = 0;
 
+        for (int i = 0; i < n; i++)
+            towers.add(m);
+
+        while (higherHeight > 1) {
+            if (destroyedTowers >= n-1)
+                return winner;
+
+        }
+
+        return winner;
     }
 
 }
